@@ -1,0 +1,315 @@
+/* ----------------------------------*/
+/*         BASIC SETUP               */
+/*---------------------------------- */
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', arial, sans-serif;
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.div {
+	display: block;
+}
+.padding,
+.container.padding {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+/* ----------------------------------*/
+/*         GENERAL SETUP               */
+/*---------------------------------- */
+
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+/* ----------------------------------*/
+/*         CASE-STUDY BANNER              */
+/*---------------------------------- */
+
+.case-study-main {
+	position: relative;
+
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	overflow: hidden;
+	color: #fff;
+}
+
+.case-study-main .case-study-banner h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+	position: relative;
+	margin-top: 200px;
+	padding: 20px 0;
+}
+body.contempo .case-study-main {
+	background-image: url('/assets/case-studies/contempo/contempo1.jpg');
+}
+body.omnifood .case-study-main {
+	background-image: url('/assets/case-studies//omnifood/of5.jpg');
+}
+body.lavender .case-study-main {
+	background-image: url('/assets/case-studies/lavender/lavender2.jpg');
+}
+body.roxxboxx .case-study-main {
+	margin-top: 50px;
+	background-image: url('/assets/case-studies/roxxboxx/roxxboxx.jpg');
+}
+body.dove .case-study-main {
+	background-image: url('/assets/case-studies/dove/dove_deo_comp_mag.jpg');
+}
+body.henley .case-study-main {
+	background-image: url('/assets/case-studies/henley/henley.jpg');
+}
+/* ----------------------------------*/
+/*         CASE-STUDY 2 column             */
+/*---------------------------------- */
+
+.rebrand-main {
+	margin: 50px 0 50px;
+	color: #707071;
+}
+.rebrand-main-left {
+	width: 45%;
+	position: relative;
+	float: left;
+	text-align: justify;
+	margin-left: 0;
+}
+.rebrand-main-right {
+	width: 45%;
+	position: relative;
+	float: right;
+	text-align: justify;
+}
+
+.rebrand-main-right .right-column {
+	width: 45%;
+	position: relative;
+	float: left;
+	margin-left: 0;
+}
+.rebrand-main-right ul li {
+	text-decoration: none;
+	list-style: none;
+}
+/* ----------------------------------*/
+/*         CASE-STUDY logo              */
+/*---------------------------------- */
+.no-parallax {
+	clear: both !important;
+}
+.full-width-content {
+	width: 100%;
+}
+
+.case-study-intro-text {
+	background: #fff;
+}
+.case-study-intro-text .max-container {
+	overflow: hidden;
+}
+
+.case-study-intro-text .padding {
+	padding-top: 58px;
+	padding-bottom: 53px;
+}
+
+.container {
+	max-width: 1200px;
+	position: relative;
+}
+
+.case-study-intro-text .graybar-two-thrds {
+	padding: 0 60px 40px 0;
+	margin: 0;
+}
+
+.graybar-two-thrds {
+	width: 50%;
+	float: left;
+}
+.case-study-intro-text p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.case-study-intro-text .graybar-one-third {
+	width: 50%;
+	float: left;
+	padding: 0 0 40px 40px;
+}
+
+.graybar-one-third ul {
+	color: #707071;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 15px 0 0;
+	margin: 0;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.4;
+	list-style: none;
+}
+.graybar-one-third ul li {
+	margin: 0 0 13px;
+}
+.graybar-one-third ul li a {
+	text-decoration: none;
+}
+
+/* ----------------------------------*/
+/*         CASE-STUDY video              */
+/*---------------------------------- */
+
+.wrap-section-main {
+	position: relative;
+	color: #fff;
+	text-align: center;
+}
+.wrap-section-main .image-main {
+	min-height: 100%;
+	min-width: 100%;
+	position: relative;
+
+	z-index: -1;
+}
+.wrap-section-main .container {
+	position: absolute;
+	top: 60%;
+	width: 100%;
+	z-index: 2;
+}
+
+/* ----------------------------------*/
+/*         DESIGN NOTES             */
+/*---------------------------------- */
+
+.full-width-content {
+	width: 100%;
+	background: #fff;
+}
+
+.small-container {
+	text-align: center;
+	padding: 0 15px;
+	max-width: 850px;
+	display: block;
+	font-size: 20px;
+	margin: 0 auto;
+}
+h2,
+h3 {
+	font-size: 30px;
+	letter-spacing: -1.3px;
+	line-height: 1.2;
+	margin: 0 0 18px;
+}
+a.hover-link {
+	text-decoration: none;
+}
+a {
+	cursor: pointer;
+	color: #ef9123;
+}
+
+/* ----------------------------------*/
+/*         FULLY RESPONSIVE           */
+/*---------------------------------- */
+
+.cta-component-second {
+	background: #fff;
+}
+.animated-devices {
+	position: relative;
+	text-align: center;
+	align-items: center;
+}
+.animated-devices .devices-holder {
+	min-height: 100%;
+	min-width: 100%;
+	position: relative;
+}
+/*
+-------------------------------------------------
+										MEDIA QUERY
+-------------------------------------------------
+ */
+@media (max-width: 900px) {
+	.case-study-banner h1 {
+		font-size: 30px;
+	}
+	.case-study-banner h2 {
+		font-size: 20px;
+	}
+}
+
+/*
+-------------------------------------------------
+										MEDIA QUERY
+-------------------------------------------------
+ */
+@media (max-width: 769px) {
+	.case-study-banner h1 {
+		font-size: 30px;
+	}
+	.case-study-banner h2 {
+		font-size: 20px;
+	}
+	.request-services .work-overview {
+		max-width: 170px;
+		padding: 8px 0;
+		font-size: 10px;
+	}
+	.graybar-two-thrds h2 {
+		font-size: 20px;
+	}
+	.graybar-two-thrds p {
+		font-size: 15px;
+	}
+
+	.graybar-one-third h2 {
+		font-size: 20px;
+	}
+	.graybar-two-thrds {
+		width: 100%;
+	}
+	.case-study-intro-text .graybar-two-thrds {
+		padding: 0;
+		margin: 0;
+	}
+	.case-study-intro-text .graybar-one-third {
+		width: 100%;
+		padding: 0;
+	}
+	.cta-component h2 {
+		font-size: 20px;
+	}
+}
+
+/*
+-------------------------------------------------
+										MEDIA QUERY
+-------------------------------------------------
+ */
+@media (max-width: 600px) {
+}

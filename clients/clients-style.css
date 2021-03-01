@@ -1,0 +1,211 @@
+/* ----------------------------------*/
+/*         BASIC SETUP               */
+/*---------------------------------- */
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', arial, sans-serif;
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.div {
+	display: block;
+}
+.padding,
+.container.padding {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+/* ----------------------------------*/
+/*         GENERAL SETUP               */
+/*---------------------------------- */
+
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+/* ----------------------------------*/
+/*   SECOND NAVIGATOR SECTION        */
+/*---------------------------------- */
+
+body.client .sec-nav-container {
+	background: #ecce21;
+}
+
+.sec-nav-container {
+	width: 100%;
+	position: fixed;
+	top: 60px;
+	padding: 0 0;
+	z-index: 5;
+}
+
+.orange {
+	color: #fff;
+}
+.sec-nav-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+ul {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 0.3em;
+	margin-block-end: 0.3em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+ul.sec-nav li {
+	display: inline-block;
+	list-style: none;
+	vertical-align: middle;
+	margin: -1px 20px 1px 0;
+}
+
+body.work .sec-nav-container a.active,
+body.case-studies .sec-nav-container a.active {
+	color: #fff !important;
+}
+
+ul.sec-nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	font-weight: 500;
+	margin: 0;
+	line-height: 14px;
+}
+ul.sec-nav a:before {
+	content: '';
+	border-bottom: 1px solid white;
+	padding: 0 0px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 0;
+	transition: 0.3s;
+}
+ul.sec-nav a:hover:before {
+	width: 100%;
+}
+/* ----------------------------------*/
+/*         CASE-STUDY BANNER              */
+/*---------------------------------- */
+
+.case-study-main .case-study-banner {
+	position: relative;
+	background-image: url('/assets/client/client-specifiec/client-head1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	overflow: hidden;
+	color: #fff;
+}
+
+.case-study-main .case-study-banner h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+	position: relative;
+	margin-top: 150px;
+	padding: 20px 0;
+}
+.nav-social-box div:hover i {
+	color: #ecce21;
+}
+.about-contact-us li:hover a {
+	color: #ecce21;
+}
+.about-link a:hover {
+	color: #ecce21;
+}
+/*
+-------------------------------------------------
+										MEDIA QUERY
+-------------------------------------------------
+ */
+@media (max-width: 900px) {
+	.case-study-banner h1 {
+		font-size: 30px;
+	}
+	.case-study-banner h2 {
+		font-size: 20px;
+	}
+}
+
+/*
+-------------------------------------------------
+										MEDIA QUERY
+-------------------------------------------------
+ */
+@media (max-width: 769px) {
+	.case-study-banner h1 {
+		font-size: 30px;
+	}
+	.case-study-banner h2 {
+		font-size: 20px;
+	}
+	.request-services .work-overview {
+		max-width: 170px;
+		padding: 8px 0;
+		font-size: 10px;
+	}
+	.graybar-two-thrds h2 {
+		font-size: 20px;
+	}
+	.graybar-two-thrds p {
+		font-size: 15px;
+	}
+
+	.graybar-one-third h2 {
+		font-size: 20px;
+	}
+	.graybar-two-thrds {
+		width: 100%;
+	}
+	.case-study-intro-text .graybar-two-thrds {
+		padding: 0;
+		margin: 0;
+	}
+	.case-study-intro-text .graybar-one-third {
+		width: 100%;
+		padding: 0;
+	}
+	.cta-component h2 {
+		font-size: 20px;
+	}
+	a.request-services.work-overview {
+		max-width: 170px;
+		padding: 8px 0;
+		font-size: 10px;
+	}
+}
+
+/*
+-------------------------------------------------
+										MEDIA QUERY
+-------------------------------------------------
+ */
+@media (max-width: 600px) {
+}
